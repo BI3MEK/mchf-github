@@ -1369,9 +1369,11 @@ static void UiLcdHy28_TouchscreenReadData()
 {
 
     UiLcdHy28_TouchscreenCsEnable();
-    UiLcdHy28_SpiSendByte(144);
+    //UiLcdHy28_SpiSendByte(144);
+    UiLcdHy28_SpiSendByte(XPT2046_CONV_START|XPT2046_CH_DFR_X);
     ts.tp_x = UiLcdHy28_SpiReadByte();
-    UiLcdHy28_SpiSendByte(208);
+    //UiLcdHy28_SpiSendByte(208);
+    UiLcdHy28_SpiSendByte(XPT2046_CONV_START|XPT2046_CH_DFR_Y);
     ts.tp_y = UiLcdHy28_SpiReadByte();
     UiLcdHy28_TouchscreenFinishSpiTransfer();
 }
