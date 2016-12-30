@@ -121,6 +121,7 @@ const MenuDescriptor displayGroup[] =
     { MENU_DISPLAY, MENU_ITEM, MENU_METER_COLOUR_DOWN,"123","Lower Meter Colour", UiMenuDesc("Set the colour of the scale of combined SWR/AUD/ALC-Meter") },
     { MENU_DISPLAY, MENU_ITEM, MENU_DBM_DISPLAY,"120","dBm display", UiMenuDesc("Enable an additional numeric display of the RX signal strength")},
     { MENU_DISPLAY, MENU_ITEM, MENU_S_METER,"121","S-Meter", UiMenuDesc("Select the S-Meter measurement style. In old school mode, the RF Gain influence the S-Meter settings, higher RFG values increase S-Meter value.")},
+    { MENU_DISPLAY, MENU_ITEM, CONFIG_FWD_REV_PWR_DISP,"270","Disp. Pwr (mW)", UiMenuDesc(":soon:") },
     { MENU_DISPLAY, MENU_STOP, 0, "   " , NULL, UiMenuDesc("") }
 };
 
